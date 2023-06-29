@@ -1,0 +1,13 @@
+# Service definition to execute an objective.
+
+# The name of the objective.
+string objective_name
+
+# All parameters required by the given objective.
+studio_msgs/BehaviorParameter[] parameter_overrides
+---
+# 1 if successful, otherwise an error code.
+studio_msgs/MoveItErrorCodes error_code
+
+# An error message or an empty string.
+string error_message
